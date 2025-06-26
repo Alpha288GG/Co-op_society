@@ -204,19 +204,55 @@ h1 {
   }
 }
 @media (max-width: 600px) {
+  html, body {
+    font-size: 18px;
+    background: #f4f4f4;
+  }
   .navbar {
     flex-direction: column;
     align-items: stretch;
-    padding: 8px 2px;
+    padding: 12px 2px 8px 2px;
+    border-radius: 0 0 12px 12px;
   }
   .nav-left {
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .logo {
-    height: 32px;
-    margin-bottom: 4px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  .brand {
+    font-size: 1.3em;
+  }
+  .nav-btn {
+    width: 100%;
+    margin: 6px 0;
+    border-radius: 10px;
+    font-size: 1.1em;
+    padding: 14px 0;
+  }
+  form {
+    padding: 18px 4px 12px 4px;
+    gap: 18px;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+  input, button[type="submit"] {
+    font-size: 1.15em;
+    padding: 16px 10px;
+    border-radius: 8px;
+  }
+  button[type="submit"] {
+    font-size: 1.1em;
+    padding: 16px 0;
+    border-radius: 10px;
+  }
+  #records {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 2px 6px 2px;
   }
   table, thead, tbody, th, td, tr {
     display: block;
@@ -226,32 +262,38 @@ h1 {
     display: none;
   }
   tr {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     border-bottom: 2px solid #e0e7ff;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 1px 4px #0001;
-    padding: 8px 0;
+    padding: 10px 0;
   }
   td {
     border: none;
     position: relative;
     padding-left: 48%;
-    min-height: 32px;
-    font-size: 1em;
+    min-height: 36px;
+    font-size: 1.08em;
     background: none;
+    word-break: break-word;
   }
   td:before {
     position: absolute;
-    left: 8px;
-    top: 8px;
+    left: 10px;
+    top: 10px;
     width: 45%;
     white-space: nowrap;
     font-weight: bold;
     color: #4f8cff;
     content: attr(data-label);
+    font-size: 1em;
   }
   .proof-thumb {
-    height: 20px;
+    height: 28px;
+  }
+  h1 {
+    font-size: 1.3em;
+    margin-bottom: 14px;
   }
 }
