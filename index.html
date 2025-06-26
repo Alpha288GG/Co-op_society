@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Society Payment Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div style="width:100%;background:#e0e7ff;color:#222;text-align:center;padding:6px 0 4px 0;font-size:1em;font-weight:600;letter-spacing:0.5px;box-shadow:0 1px 4px #0001;">
+    © 2025 Created by Swapnil Shinde
+  </div>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="WhatsApp Image 2025-06-24 at 09.20.36_40235af2.jpg" alt="Society Logo" class="logo" />
+      <span class="brand">Co-Op Society</span>
+    </div>
+    <div class="nav-right">
+      <button id="userViewBtn" class="nav-btn active">User</button>
+      <button id="adminViewBtn" class="nav-btn">Admin</button>
+    </div>
+  </nav>
+  <div id="userSection">
+    <h1>Co-Op Housing Society Payment</h1>
+    <form id="paymentForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="flat" placeholder="Flat Number" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
+      <input type="text" id="reason" placeholder="Reason (e.g., Cleaning)" required />
+      <button type="submit">Submit Payment</button>
+    </form>
+  </div>
+  <div id="adminSection" style="display:none;">
+    <h1>Admin: View Society Payments</h1>
+    <div id="records">
+      <table id="paymentsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Flat</th>
+            <th>Amount</th>
+            <th>Reason</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Proof</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Records will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
