@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Society Payment Portal</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
 </head>
 <body>
   <div style="width:100%;background:#e0e7ff;color:#222;text-align:center;padding:6px 0 4px 0;font-size:1em;font-weight:600;letter-spacing:0.5px;box-shadow:0 1px 4px #0001;">

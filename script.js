@@ -134,6 +134,18 @@ function fillFormFromSpeech(text) {
   // Lowercase and normalize
   const norm = text.toLowerCase().replace(/\s+/g, ' ');
   // Extract fields in any order
+        const imgSrc = this.getAttribute('data-img');
+        showImageModal(imgSrc);
+      }
+    });
+  });
+}
+
+// Voice input for payment form
+function fillFormFromSpeech(text) {
+  // Lowercase and normalize
+  const norm = text.toLowerCase().replace(/\s+/g, ' ');
+  // Extract fields in any order
   let flat = '', name = '', amount = '', reason = '';
   // Flat
   const flatMatch = norm.match(/flat(?:\s*number|\s*no\.?|)\s*(\w+)/i);

@@ -1,0 +1,21 @@
+{
+  "name": "Co-Op Society Payment Portal",
+  "short_name": "SocietyPay",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#e0e7ff",
+  "theme_color": "#4f8cff",
+  "description": "A simple portal for society payments and admin management.",
+  "icons": [
+    {
+      "src": "WhatsApp Image 2025-06-24 at 09.20.36_40235af2.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "WhatsApp Image 2025-06-24 at 09.20.36_40235af2.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
